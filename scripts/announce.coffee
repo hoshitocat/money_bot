@@ -5,5 +5,5 @@ module.exports = (robot) ->
     reason = msg.match[3]
     msg.send ("\n金銭管理を担当するmoney-keeperbotです。\n\n" + 
     "本日共用料金が発生しました。\n" + 
-    "したがって、#{me}さんに#{how_match}円をお支払い下さい。\n\n" +
+    "したがって、#{me}さんに#{Math.ceil(how_match / 3)}円をお支払い下さい。\n\n" +
     "\$ お金の利用用途\n  \* #{reason}")
