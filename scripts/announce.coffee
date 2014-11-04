@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.hear /(money)\s(\@.*)\s([0-9]*)\s(.*)/i, (msg) ->
+  robot.hear /^money\s(\@.*)\s([0-9]*)\s(.*)$/i, (msg) ->
     me = msg.match[1]
     how_match = msg.match[2]
     reason = msg.match[3]
